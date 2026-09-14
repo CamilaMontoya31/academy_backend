@@ -1,0 +1,26 @@
+@baseUrl = http://localhost:8083/coursemng
+
+### Search instructors by name or subject
+GET {{baseUrl}}/api/instructors
+Accept: application/json
+Content-Type: application/json
+
+### Search by id
+GET {{baseUrl}}/api/instructors/1
+Accept: application/json
+Content-Type: application/json
+
+### Create instructor
+POST {{baseUrl}}/api/instructors
+Content-Type: application/json
+Accept: application/json
+
+{
+  "firstName": "Camila",
+  "lastName": "Montoya",
+  "email": "montoya@gmail.com",
+  "instructorDetail": {
+    "youtubeChannel": "https://www.youtube.com/@pomodorocrew",
+    "hobby": "study"
+  }
+}
